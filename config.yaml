@@ -85,3 +85,11 @@ sloth_on_game_launch:
     - "steam.exe"
 sloth_snooze_reminders: true
 sloth_pause_workflows: true
+# Phase 3 additions
+focus_default_minutes: 25
+git_auto_watch_repo: ""
+git_debounce_seconds: 30
+briefing_auto_run: true
+reminder_check_interval_seconds: 30
+health_nudge_enabled: true
+idle_poll_interval_seconds: 60

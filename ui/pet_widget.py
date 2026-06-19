@@ -35,6 +35,10 @@ class PetWidget(QWidget):
         self.timer.timeout.connect(self._tick)
         self.timer.start(80)
         self._drag_pos = None
+        self.open_requested = None
+        self.toggle_sloth = None
+        self.toggle_stealth = None
+        self.toggle_mute = None
 
     def set_state(self, state: str | PetState) -> None:
         """Set pet animation state."""
@@ -86,15 +90,25 @@ class PetWidget(QWidget):
             p.drawText(int(w*0.40), int(h*0.88), "▤")
 
     def contextMenuEvent(self, event) -> None:
-        """Show companion context menu."""
+        """Show companion context menu and invoke configured callbacks."""
         menu = QMenu(self)
-        for action in ["Hide Pet", "Open Full Window", "Mute", "Stealth Mode", "Sloth Mode"]:
-            menu.addAction(action)
-        menu.exec(event.globalPos())
+        actions = {
+            "Hide Pet": lambda: self.hide(),
+            "Open Full Window": self.open_requested,
+            "Mute": self.toggle_mute,
+            "Stealth Mode": self.toggle_stealth,
+            "Sloth Mode": self.toggle_sloth,
+        }
+        action_map = {menu.addAction(label): cb for label, cb in actions.items()}
+        chosen = menu.exec(event.globalPos())
+        cb = action_map.get(chosen)
+        if callable(cb):
+            cb()
 
     def mouseDoubleClickEvent(self, event) -> None:
-        """Emit a simple bubble on double-click; host app can wire full-window toggling."""
-        self.show_bubble("Full window toggle.")
+        """Open or restore the main JARVIS window on double-click."""
+        if callable(self.open_requested):
+            self.open_requested()
         event.accept()
 
     def mousePressEvent(self, event) -> None:
