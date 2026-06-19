@@ -1,0 +1,6 @@
+enabled: false
+schedule: "21:00"
+categories: ["education", "technology"]
+max_downloads: 3
+clip_duration_seconds: 45
+upload_requires_confirmation: true

@@ -1,0 +1,40 @@
+user_name: "Sir"
+wake_mode: "both"
+clap_sensitivity: 0.75
+voice_speed: 160
+voice_volume: 0.9
+tts_engine: "pyttsx3"
+llm_provider: "ollama"
+llm_model: "llama3:8b"
+llm_context_window: 2048
+openai_api_key: ""
+gemini_api_key: ""
+youtube_api_key: ""
+pexels_api_key: ""
+openweather_api_key: ""
+twitter_api_key: ""
+default_docs_folder: "C:/Users/USER/Documents/JARVIS"
+default_video_folder: "C:/Users/USER/Videos/JARVIS"
+default_project_folder: "C:/Users/USER/Projects"
+youtube_channel_id: ""
+briefing_time: "08:00"
+health_nudge_interval_minutes: 60
+focus_blocked_sites:
+  - "instagram.com"
+  - "twitter.com"
+  - "reddit.com"
+performance_mode: false
+animations_enabled: true
+minimize_to_orb: true
+intruder_alert_enabled: false
+predictive_behavior_enabled: true
+git_auto_commit: false
+second_brain_enabled: true
+features:
+  voice: true
+  wake: true
+  browser: true
+  messaging: true
+  workflows: false
+  intruder_alert: false
+  git_auto: false
