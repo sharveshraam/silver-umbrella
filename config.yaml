@@ -1,0 +1,95 @@
+user_name: "Sir"
+wake_mode: "both"
+clap_sensitivity: 0.75
+voice_speed: 160
+voice_volume: 0.9
+tts_engine: "pyttsx3"
+llm_provider: "ollama"
+llm_model: "llama3:8b"
+llm_context_window: 2048
+openai_api_key: ""
+gemini_api_key: ""
+youtube_api_key: ""
+pexels_api_key: ""
+openweather_api_key: ""
+twitter_api_key: ""
+default_docs_folder: "C:/Users/USER/Documents/JARVIS"
+default_video_folder: "C:/Users/USER/Videos/JARVIS"
+default_project_folder: "C:/Users/USER/Projects"
+youtube_channel_id: ""
+briefing_time: "08:00"
+health_nudge_interval_minutes: 60
+focus_blocked_sites:
+  - "instagram.com"
+  - "twitter.com"
+  - "reddit.com"
+performance_mode: false
+animations_enabled: true
+minimize_to_orb: true
+intruder_alert_enabled: false
+predictive_behavior_enabled: true
+git_auto_commit: false
+second_brain_enabled: true
+features:
+  voice: true
+  wake: true
+  browser: true
+  messaging: true
+  workflows: false
+  intruder_alert: false
+  git_auto: false
+
+stealth_mode_default: false
+stealth_sidebar_position: "right"
+stealth_sidebar_opacity: 0.85
+stealth_hotkey: "ctrl+shift+s"
+pet_enabled: true
+pet_size: 120
+pet_position: "bottom_right"
+pet_personality: "witty"
+pet_speech_bubbles: true
+pet_random_idle_animations: true
+teaching_mode: true
+teaching_depth_default: "medium"
+skip_known_concepts: true
+teaching_proactive_suggestions: true
+self_learning_enabled: true
+learning_trigger: "idle"
+idle_threshold_minutes: 10
+learning_sources:
+  - "https://news.ycombinator.com/rss"
+  - "https://techcrunch.com/feed/"
+  - "https://arxiv.org/rss/cs.AI"
+  - "https://creatoracademy.youtube.com/feed"
+learning_surface_proactively: true
+learning_daily_briefing_summary: true
+location_adaptive: true
+location_manual_override: ""
+location_timezone_auto: true
+language_dialect: "auto"
+network_awareness: true
+battery_awareness: true
+battery_low_threshold: 20
+battery_critical_threshold: 10
+sloth_mode_hotkey: "ctrl+shift+z"
+sloth_wake_hotkey: "ctrl+shift+w"
+sloth_auto_schedule:
+  enabled: false
+  sleep_time: "22:00"
+  wake_time: "08:00"
+sloth_on_game_launch:
+  enabled: false
+  game_processes:
+    - "valorant.exe"
+    - "minecraft.exe"
+    - "steam.exe"
+sloth_snooze_reminders: true
+sloth_pause_workflows: true
+# Phase 3 additions
+focus_default_minutes: 25
+git_auto_watch_repo: ""
+git_debounce_seconds: 30
+briefing_auto_run: true
+reminder_check_interval_seconds: 30
+health_nudge_enabled: true
+idle_poll_interval_seconds: 60
