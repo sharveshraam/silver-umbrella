@@ -56,3 +56,29 @@ assets/     Sounds, icons, and optional TTS voice assets
 - Keep heavy services lazy-loaded.
 - Avoid blocking the UI thread; schedule workflows in background jobs/threads.
 - Prefer local/offline behavior and explicit confirmation for destructive actions.
+
+## Phase 2 Modes
+
+### Stealth Mode
+
+Stealth Mode switches JARVIS into silent text-only operation. TTS is suppressed, the microphone/STT path can remain active, and the sidebar chat displays timestamped responses. Toggle it with the HUD Stealth button, the configured `stealth_hotkey`, or the phrase `JARVIS, stealth mode`.
+
+### Companion Pet
+
+The floating pet is a lightweight transparent `QWidget` rendered with `QPainter`. It supports idle, listening, thinking, working, happy, alert, sleeping, stealth, focused, and reading states, plus short speech bubbles for quick nudges.
+
+### Teaching Mode
+
+Teaching Mode turns errors into layered explanations: what happened, why it happened, deeper context, how to fix it now, how to avoid it next time, and a prompt to go deeper. Known concepts are stored locally so JARVIS can avoid repeating full lessons unnecessarily.
+
+### Self-Learning
+
+Self-learning is idle-triggered only. When the user has been inactive long enough, JARVIS can fetch configured RSS sources in a daemon thread, summarize items, store them in the Second Brain, and stop immediately when activity returns or Sloth Mode activates.
+
+### Location Adaptive Mode
+
+On startup, JARVIS can detect coarse location, timezone, network latency, and battery state. It uses this context to recommend local/offline mode, reduced video quality, performance mode, or workflow pausing.
+
+### Sloth Mode
+
+Sloth Mode is full DND/deep sleep. Wake detection, speech, learning, reminders, workflows, sounds, and animations are expected to pause until the user manually wakes JARVIS through the orb, wake hotkey, or optional configured auto-wake.

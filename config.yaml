@@ -38,3 +38,50 @@ features:
   workflows: false
   intruder_alert: false
   git_auto: false
+
+stealth_mode_default: false
+stealth_sidebar_position: "right"
+stealth_sidebar_opacity: 0.85
+stealth_hotkey: "ctrl+shift+s"
+pet_enabled: true
+pet_size: 120
+pet_position: "bottom_right"
+pet_personality: "witty"
+pet_speech_bubbles: true
+pet_random_idle_animations: true
+teaching_mode: true
+teaching_depth_default: "medium"
+skip_known_concepts: true
+teaching_proactive_suggestions: true
+self_learning_enabled: true
+learning_trigger: "idle"
+idle_threshold_minutes: 10
+learning_sources:
+  - "https://news.ycombinator.com/rss"
+  - "https://techcrunch.com/feed/"
+  - "https://arxiv.org/rss/cs.AI"
+  - "https://creatoracademy.youtube.com/feed"
+learning_surface_proactively: true
+learning_daily_briefing_summary: true
+location_adaptive: true
+location_manual_override: ""
+location_timezone_auto: true
+language_dialect: "auto"
+network_awareness: true
+battery_awareness: true
+battery_low_threshold: 20
+battery_critical_threshold: 10
+sloth_mode_hotkey: "ctrl+shift+z"
+sloth_wake_hotkey: "ctrl+shift+w"
+sloth_auto_schedule:
+  enabled: false
+  sleep_time: "22:00"
+  wake_time: "08:00"
+sloth_on_game_launch:
+  enabled: false
+  game_processes:
+    - "valorant.exe"
+    - "minecraft.exe"
+    - "steam.exe"
+sloth_snooze_reminders: true
+sloth_pause_workflows: true

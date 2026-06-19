@@ -1,3 +1,5 @@
 QWidget { background: #050b14; color: #7df9ff; font-family: Consolas, monospace; }
 QPushButton { border: 1px solid #00d9ff; border-radius: 6px; padding: 6px; background: rgba(0, 217, 255, 0.08); }
-QTextEdit { border: 1px solid #0aa; background: #02060c; }
+QPushButton:hover { background: rgba(0, 217, 255, 0.18); }
+QTextEdit, QLineEdit { border: 1px solid #0aa; background: rgba(2, 6, 12, 220); color: #9ffcff; }
+QLabel#stealthBadge { color: #00f0ff; font-weight: bold; background: rgba(0, 40, 55, 180); padding: 4px; border: 1px solid #00d9ff; }
