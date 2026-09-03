@@ -1,0 +1,1 @@
+# COPE Companion — no extra ProGuard rules required for the debug/release unminified build.

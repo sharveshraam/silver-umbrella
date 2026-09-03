@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">COPE Companion</string>
+    <string name="status_idle">Disconnected</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="pc_ip">PC IP address</string>
+    <string name="port">Port</string>
+    <string name="voice_commands">Voice Commands</string>
+    <string name="notification_mirror">Notification Mirror</string>
+    <string name="clipboard_sync">Clipboard Sync</string>
+    <string name="location_sharing">Location Sharing</string>
+    <string name="speak">Speak to COPE</string>
+    <string name="send_file">Send file to PC</string>
+    <string name="mic_channel">COPE mic</string>
+    <string name="mic_notification">Listening for voice commands and double-clap</string>
+</resources>

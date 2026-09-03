@@ -1,0 +1,5 @@
+enabled: false
+schedule: "09:00"
+topics: ["AI tools", "Python automation", "productivity"]
+resolution: "720p"
+upload_requires_confirmation: true
